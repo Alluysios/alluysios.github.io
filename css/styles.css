@@ -80,12 +80,18 @@ a {
 hr {
     display: inline-block;
     background: #464355;
-    width: 350px;
+    width: 200px;
     border-radius: 50%;
-    margin-right: 5rem;
-    margin-left: 5rem;
+    margin: 2rem 5rem;
     vertical-align: -10px;
     height: 5px;
+}
+
+@media only screen and (max-width: 1150px) {
+    .portfolio .heading-primary hr {
+        display: block;
+        margin: 2rem auto;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -199,6 +205,39 @@ section {
     transition: all .3s;
 }
 
+.github-link {
+    display: inline-block;
+    margin-top: 2rem;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 10px;
+    color: #8458B3;
+    border-bottom: 1px solid #464355;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+.github-link:hover .fa.fa-github {
+    animation: jump infinite alternate .3s;
+}
+
+.fa.fa-github {
+    font-size: 3rem;
+    color: #000000;
+    margin-left: 8px;
+    vertical-align: top;
+}
+
 .rarr {
     padding-left: 5px;
     transition: all .3s;
@@ -274,7 +313,8 @@ section {
 ************************/
 .service {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .service-card {
@@ -286,7 +326,7 @@ section {
 
 .service-card > i {
     font-size: 6rem;
-    color: #8458B3;
+    color: #464355;
 }
 
 .service-card > * {
@@ -324,6 +364,7 @@ section {
 
 .detail {
     flex: 0 1 50%;
+    text-align: center;
 }
 
 .skills {
@@ -365,6 +406,16 @@ section {
     .skills {
         align-self: center;
     }
+    .image-container {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .about-me {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 425px) {
@@ -374,19 +425,13 @@ section {
     .service-card {
         flex: 1;
     }
-    .about-me {
-        flex-direction: column;
-    }
     .detail .description {
         margin-top: 3rem;
     }
     .skills {
         margin-top: 3rem;
     }
-    .image-container {
-        width: 250px;
-        height: 250px;
-    }
+    
 }
 
 
@@ -429,6 +474,9 @@ section {
 }
 .portfolio-card:nth-child(6) {
     animation-delay: 1s;
+}
+.portfolio-card:nth-child(7) {
+    animation-delay: 1.2s;
 }
 
 .portfolio-image-container {
