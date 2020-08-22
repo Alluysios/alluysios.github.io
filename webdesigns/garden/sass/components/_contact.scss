@@ -1,0 +1,22 @@
+.contact {
+    background-image: url(../img/contact-img.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    color: $color-dark-brown;
+
+    &__content {
+        padding-left: 15rem;
+    }
+
+    &__info:not(:last-of-type) {
+        width: 200px;
+        border-bottom: 1px solid $color-dark-brown;
+    }
+    
+    &__info {
+        margin-top: 8px;
+        margin-bottom: 3px;
+        font-weight: 600;
+    }
+}

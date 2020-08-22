@@ -1,0 +1,29 @@
+$color-primary-green: #88f500;
+$color-primary-green--dark: #083212;
+$color-light-brown: #ffeec9;
+$color-dark-brown: #281b00;
+
+$color-white: #fff;
+$color-black: #000;
+
+
+.break {
+    display: block;
+}
+
+.divider {
+    height: 2.3rem;
+    width: 1px;
+    margin: 0 1rem;
+    background-color: $color-light-brown;
+}
+
+.dark-background { background-color: $color-dark-brown; }
+.light-background { background-color: $color-light-brown; }
+
+.active { border-top: 2px solid #88f500; }
+
+.text-center { text-align: center; }
+
+.mt-3 { margin-top: 3rem; }
+.mt-5 { margin-top: 5rem; }

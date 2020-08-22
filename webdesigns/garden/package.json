@@ -1,0 +1,15 @@
+{
+  "name": "garden",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "scripts": {
+    "node:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Alluysios Arriba",
+  "license": "ISC"
+}

@@ -1,0 +1,46 @@
+.footer {
+    color: $color-light-brown;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8rem 0;
+
+    &__copyright {
+        & img {
+            margin-bottom: 3rem;
+        }
+
+        & p {
+            padding-top: 1.5rem;
+            border-top: 2px solid $color-light-brown;
+        }
+    }
+
+    &__supplier {
+        justify-self: flex-start;
+
+        &-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 200px;
+        }
+    }
+
+    &__supplier-heading {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    &__global--title,
+    &__local--title {
+        padding-bottom: 4px;
+        font-weight: 500;
+    }
+
+    &__list {
+        list-style: none;
+
+        & li {
+            margin: 2.5px 0;
+        }
+    }
+}

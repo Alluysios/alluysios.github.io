@@ -1,0 +1,37 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+        list-style: none;
+        display: flex;
+        font-size: 1.6rem;
+    }
+
+    &__item {
+        text-transform: uppercase;
+        font-family: 'Playfair Display', serif;
+    }
+
+    &__link {
+        display: block;
+        color: $color-light-brown;
+        padding: 4rem 2rem;
+        transition: all .3s;
+
+        &:hover {
+            background: $color-primary-green;
+            color: $color-dark-brown;
+            font-weight: 700;
+        }
+    }
+}
+
+nav {
+    box-shadow: 2px 6px 15px rgba($color:$color-primary-green, $alpha: .4);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    opacity: .95;
+}

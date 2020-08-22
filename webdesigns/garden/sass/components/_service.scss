@@ -1,0 +1,21 @@
+.service {
+    text-align: center;
+    color: $color-dark-brown;
+
+    &__pack {
+        padding-top: 8rem;
+        display: flex;
+    }
+
+    &__item {
+
+        &:not(:last-of-type) {
+            margin-right: 2rem;
+        }
+
+        & img {
+            width: 40px;
+            margin-bottom: 8px;
+        }
+    }
+}
