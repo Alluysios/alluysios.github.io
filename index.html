@@ -4,7 +4,7 @@
         <title> Alluysios Arriba || Portfolio </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/styles.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -96,25 +96,43 @@
                 <div class="portfolio-container container">
                     <div class="portfolio-highlight">
                         <h2 class='heading-secondary default'>Latest Project</h2>
+                        <div class="portfolio-image-container" id="slider">
+                            <div class="slider__item main-slider">
+                                <img src='img/portfolio/feature.jpg' alt='Wishzona, wish clone' class='portfolio-image'>
+                            </div>
+                            <div class="slider__item">
+                                <img src='img/portfolio/feature2.jpg' alt='Wishzona, wish clone' class='portfolio-image'>
+                            </div>
+                            <div class="slider__item">
+                                <img src='img/portfolio/feature3.jpg' alt='Wishzona, wish clone' class='portfolio-image'>
+                            </div>
+                            <div class="slider__item">
+                                <img src='img/portfolio/feature4.jpg' alt='Wishzona, wish clone' class='portfolio-image'>
+                            </div>
+                            <div class='slider-circle'>
+                                <span class='circle main-circle' data-index='0'></span>
+                                <span class='circle' data-index='1'></span>
+                                <span class='circle' data-index='2'></span>
+                                <span class='circle' data-index='3'></span>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-detail">
+                            <span class="title">Wishzona (MERN)</span>
+                            <span class='description'>Wishzona is a MERN Stack Ecommerce. You can write reviews, add/remove items in cart, authentication, integrated with stripe payment, pagination, loading spinner and category filtering.</span>
+                            <a href='https://salty-thicket-74274.herokuapp.com/' class='portfolio-link' target="_blank">Go to website <i class="fa fa-globe" aria-hidden="true"></i></a>
+                            <a href='https://github.com/Alluysios/wishzona' class='portfolio-link' target="_blank">Check Repo <i class="fa fa-globe" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
                         <div class="portfolio-image-container">
-                            <img src='img/portfolio/port1.jpg' alt='arriba fashion' class='portfolio-image'>
+                            <img src='img/portfolio/port1.jpg' alt='Stress Friends' class='portfolio-image'>
                         </div>
                         <div class="portfolio-detail">
                             <span class="title">Stress Friends (MERN)</span>
                             <span class='description'>Stress Friends a facebook clone social media web application, but for people with axiety where they can share their hardships and help one another.</span>
                             <a href='https://arribafb.herokuapp.com/' class='portfolio-link' target="_blank">Go to website <i class="fa fa-globe" aria-hidden="true"></i></a>
                             <a href='https://github.com/Alluysios/stress-friends' class='portfolio-link' target="_blank">Check Repo <i class="fa fa-globe" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="portfolio-image-container">
-                            <img src='img/portfolio/feature.png' alt='arriba fashion' class='portfolio-image'>
-                        </div>
-                        <div class="portfolio-detail">
-                            <span class="title">Wishzona (MERN)</span>
-                            <span class='description'>Wishzona is a MERN version of Arriba Fashion. It has added feature like the cart component and more friendly UI.</span>
-                            <a href='https://salty-thicket-74274.herokuapp.com/' class='portfolio-link' target="_blank">Go to website <i class="fa fa-globe" aria-hidden="true"></i></a>
-                            <a href='https://github.com/Alluysios/arribafashion-beauty-MERN' class='portfolio-link' target="_blank">Check Repo <i class="fa fa-globe" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div class="portfolio-card">
@@ -233,6 +251,6 @@
         <footer class='footer'>
             <p>Alluysios Arriba &copy; 2020</p>
         </footer>
-        <script src="js/main.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

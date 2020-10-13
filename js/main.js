@@ -41,3 +41,22 @@ window.onscroll = () => {
     document.querySelector('.contact-detail').classList.add('fadeInTop');
   }
 }
+
+const slider = document.getElementById('slider');
+const sliders = document.querySelectorAll('.slider__item');
+const circle = document.querySelector('.circle');
+
+slider.addEventListener('click', e => {
+    let indexNumber;
+    let currentSlider = document.querySelector('.main-slider');
+    let currentCircle = document.querySelector('.main-circle');;
+    if(e.target.dataset.index) {
+      currentCircle.classList.remove('main-circle')
+      e.target.classList.add('main-circle');
+      indexNumber = +e.target.dataset.index;
+      selectedSlider = sliders[indexNumber];
+      currentSlider.classList.remove('main-slider');
+      selectedSlider.classList.add('main-slider');
+    }
+    
+});
