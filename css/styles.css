@@ -447,6 +447,15 @@ section {
     overflow: hidden;
 }
 
+@media (max-width: 400px) {
+    #slider {
+        height: 370px;
+    }
+    .portfolio-highlight {
+        padding: 0;
+    }
+}
+
 .slider-circle {
     position: absolute;
     background-color: #464355;
@@ -567,13 +576,19 @@ section {
     padding: 3rem;
 }
 
+@media (max-width: 400px) {
+    .portfolio-highlight {
+        padding: 0;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .portfolio-image-container {
         flex: 0 0 40%;
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
     .portfolio-card {
         flex-direction: column;
     }
